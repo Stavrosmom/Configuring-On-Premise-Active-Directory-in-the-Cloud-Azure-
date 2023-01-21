@@ -65,7 +65,19 @@ Restart DC-1 and log back in with mydomain.com\DC-1
 </p>
 <br />
 <p>
-From the Server Manager, select "Tools" and click on active directory users and computers. Create an Organizational Unit called "_EMPLOYEES" and another named "_ADMINS".
+  
+  </p>
+<br />
+<p>
+  
+  </p>
+<br />
+<p>
+  <img src="https://i.imgur.com/KN7y0gz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+<br />
+<p>
+From the Server Manager, select "Tools" and click on active directory users and computers. Create an Organizational Unit called "_EMPLOYEES" and another named "_ADMINS". Next, in the Employees OU, create a new user.
 </p>
 <br />
 <p>
