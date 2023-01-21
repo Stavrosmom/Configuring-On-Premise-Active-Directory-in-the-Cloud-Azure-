@@ -53,7 +53,7 @@ After pinging DC-1, log into DC-1, click start, and type "Windows Defender Firew
 </p>
 <br />
 <p>
-
+After verifying that the ping succeeded, click start and enter the Server Manager,
 </p>
 <br />
 <p>
