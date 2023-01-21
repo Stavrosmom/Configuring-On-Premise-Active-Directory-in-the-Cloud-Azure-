@@ -53,7 +53,7 @@ After pinging DC-1, log into DC-1, click start, and type "Windows Defender Firew
 </p>
 <br />
 <p>
-After verifying that the ping succeeded, click start and enter the Server Manager,
+After verifying that the ping succeeded, we will install Active Directory. Click start, and enter the Server Manager. Select "Add roles and features" continue with the default settings for Installation type and server selection. At "Server Roles" check the box next to Active Directory Domain Services. Then  select next and install.
 </p>
 <br />
 <p>
@@ -61,11 +61,11 @@ After verifying that the ping succeeded, click start and enter the Server Manage
 </p>
 <br />
 <p>
-
+Restart DC-1 and log back in with mydomain.com\DC-1
 </p>
 <br />
 <p>
-
+From the Server Manager, select "Tools" and click on active directory users and computers. Create an Organizational Unit called "_EMPLOYEES" and another named "_ADMINS".
 </p>
 <br />
 <p>
