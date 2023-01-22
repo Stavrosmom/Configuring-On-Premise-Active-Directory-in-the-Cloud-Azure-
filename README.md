@@ -97,7 +97,7 @@ Once your user has been created and added to the Domain Admin Security Group, Lo
 </p>
 <br />
 <p>
-
+<img src="https://i.imgur.com/aUHyWd6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
@@ -105,7 +105,7 @@ Once you are able to log into DC-1 with your new admin account, we will connect 
 </p>
 <br />
 <p>
-
+<img src="https://i.imgur.com/ZEE94U4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
@@ -113,7 +113,7 @@ Once logged in click system -> Advanced system settings -> Computer Name -> Chan
 </p>
 <br />
 <p>
-  
+  <img src="https://i.imgur.com/ySXvJDR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   </p>
 <br />
 <p>
@@ -121,18 +121,18 @@ Once logged in click system -> Advanced system settings -> Computer Name -> Chan
   </p>
 <br />
 <p>
-  
+  <img src="https://i.imgur.com/I3KqQmR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   </p>
 <br />
 <p>
   Next, login to Client-1 with the same credentials used for DC-1. Now that CLient-1 has joined the domain, you can use the same credentials to log into the device.
 <br />
 <p>
-  
+  <img src="https://i.imgur.com/GM64llt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   </p>
 <br />
 <p>
-  Next, we will allow for RDP on Client-1 as a normal non-administrator. Once logged into Client-1, click start -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add. Type in "Domain Users", select check names and click OK.
+  Next, we will allow for RDP on Client-1 as a normal non-administrator. Once logged into Client-1, click start -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add. Type in "Domain Users", select check names and click OK. Now, you have enabled RDP for regular domain users and you know how to connect clients to an active directory domain.
   </p>
 <br />
 <p>
