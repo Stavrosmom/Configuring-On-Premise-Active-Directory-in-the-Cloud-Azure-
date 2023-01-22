@@ -81,7 +81,19 @@ From the Server Manager, select "Tools" and click on active directory users and 
 </p>
 <br />
 <p>
-
+<img src="https://i.imgur.com/UiK8e8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<p>
+Once the new user has been created, right click on the user and select "Properties". Then, select Member of -> add and enter "Domain Admins". This adds your user to the Domain Admin Security Group.
+</p>
+<br />
+<p>
+<img src="https://i.imgur.com/SPj6NNh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<p>
+Once your user has been created and added to the Domain Admin Security Group, Log off of DC-1 and sign in using your new users account. Your username should look something along the lines of mydomain.com\Jane_admin.
 </p>
 <br />
 <p>
@@ -89,7 +101,7 @@ From the Server Manager, select "Tools" and click on active directory users and 
 </p>
 <br />
 <p>
-
+Once you are able to log into DC-1 with your new admin account, we will connect Client-1 to the Domain. Minimize DC-1 and go to the resource group you created in Azure. Select Client-1 -> Networking -> Network Interface -> DNS Servers -> Custom. Then input the private IP address of DC-1 and save. Once saved, restart Client-1 and log in.
 </p>
 <br />
 <p>
@@ -97,10 +109,30 @@ From the Server Manager, select "Tools" and click on active directory users and 
 </p>
 <br />
 <p>
-
-
-
-
-
-
-
+Once logged in click system -> Advanced system settings -> Computer Name -> Change -> Domain. Then type in the name of your domain. Mine would be "mydomain.com". Select OK and input your admin credentials. Next, Restart Client-1.
+</p>
+<br />
+<p>
+  
+  </p>
+<br />
+<p>
+  To Verify that Client-1 has joined the domain go to DC-1. Enter Active Directory Users and Computers and select the Computers Organizational Unit. All Clients that have joined the domain will be in that folder.
+  </p>
+<br />
+<p>
+  
+  </p>
+<br />
+<p>
+  Next, login to Client-1 with the same credentials used for DC-1. Now that CLient-1 has joined the domain, you can use the same credentials to log into the device.
+<br />
+<p>
+  
+  </p>
+<br />
+<p>
+  Next, we will allow for RDP on Client-1 as a normal non-administrator. Once logged into Client-1, click start -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add. Type in "Domain Users", select check names and click OK.
+  </p>
+<br />
+<p>
