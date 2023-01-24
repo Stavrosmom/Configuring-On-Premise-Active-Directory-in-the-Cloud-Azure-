@@ -11,19 +11,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
 
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -46,7 +39,7 @@ After Setting DC-1's IP to static, create a Windows 10 VM named "Client-1". Use 
 <img src="https://i.imgur.com/UZRFZJd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once DC-1 and Client-1 have been created properly, Login to Client-1 with Remote Desktop and ping DC-1's private IP address with ping -t (perpetual ping) 
+Once DC-1 and Client-1 have been created properly, Login to Client-1 with Remote Desktop and ping DC-1's private IP address with ping -t (perpetual ping). 
 </p>
 <br />
 <p>
@@ -58,7 +51,7 @@ Once DC-1 and Client-1 have been created properly, Login to Client-1 with Remote
    </p>
 <br />
 <p>
-After pinging DC-1, log into DC-1, click start, and type "Windows Defender Firewall with Advanced Security". Click Inbound rules and enable Core Networking Diagnostics - ICMP Echo Request ICMPv4 (Domain and Private). Next do the same for Outbound rules. Check back to CLient-1 and verify that the ping succeeded.
+After pinging DC-1, log into DC-1, click start, and type "Windows Defender Firewall with Advanced Security". Click Inbound rules and enable Core Networking Diagnostics - ICMP Echo Request ICMPv4 (Domain and Private). Next do the same for Outbound rules. Check back to Client-1 and verify that the ping succeeded.
 </p>
 <br />
 <p>
